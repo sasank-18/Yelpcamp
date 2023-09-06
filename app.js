@@ -4,7 +4,7 @@ if(process.env.NODE_ENV!=='production'){
 process.env.NODE_ENV= 'dev'
 console.log('process.env:', process.env)
 console.log('process.env:', process.env.NODE_ENV)
-
+const PORT= process.env.PORT || 3000;
 
 
 const express = require('express')
@@ -156,7 +156,7 @@ if(!err.message) err.message= 'Oh No, Something Went Wrong';
 res.status(statusCode).render('error',{err});
 });
 
-app.listen(3000, () => {
+app.listen(PORT, () => {
     console.log('server on port 3000')
 })
 

@@ -1,9 +1,9 @@
 if(process.env.NODE_ENV!=='production'){
     require('dotenv').config();
 }
-process.env.NODE_ENV= 'dev'
-console.log('process.env:', process.env)
-console.log('process.env:', process.env.NODE_ENV)
+// process.env.NODE_ENV= 'dev'
+// console.log('process.env:', process.env)
+// console.log('process.env:', process.env.NODE_ENV)
 const PORT= process.env.PORT || 3000;
 
 
